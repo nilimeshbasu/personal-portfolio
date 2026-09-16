@@ -1,9 +1,10 @@
+$readmeContent = @'
 # 👨‍💻 Nilimesh Basu | Personal Portfolio
 
 Welcome to the repository for my personal portfolio website! I am a Full Stack Developer and a BCA student at Techno India University, passionate about building responsive and efficient web applications.
 
 ## 🚀 Live Demo
-*(Add your live hosting link here once deployed, e.g., Vercel, Netlify, or GitHub Pages)*
+🌐 [https://personal-portfolio-pink-three-21.vercel.app](https://personal-portfolio-pink-three-21.vercel.app)
 
 ## 🛠️ Tech Stack
 This portfolio is built with modern web technologies:
