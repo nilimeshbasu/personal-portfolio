@@ -1,28 +1,31 @@
-﻿export default function Contact() {
-  return (
-    <section id="contact" className="section-container">
-      <div className="cta-banner">
-        <div className="cta-content">
-          <span className="section-tag light-tag">LET'S CREATE SOMETHING GREAT</span>
-          <h2>Have a project in mind? I'd love to hear about it.</h2>
-        </div>
-        <a href="mailto:nilim@example.com" className="btn btn-primary">LET'S TALK &rarr;</a>
-      </div>
+﻿import React from 'react';
 
-      <div className="contact-info-grid">
-        <div className="contact-box">
-          <span className="contact-label">EMAIL</span>
-          <p>nilim@example.com</p>
+const Contact = () => {
+  return (
+    <section id="contact" style={{ padding: '80px 10%', backgroundColor: '#f4f5f6', fontFamily: 'sans-serif' }}>
+      <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', flexWrap: 'wrap' }}>
+        
+        {/* Email Card */}
+        <div style={{ backgroundColor: 'white', padding: '50px 30px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textAlign: 'center', flex: '1', minWidth: '280px' }}>
+          <p style={{ textTransform: 'uppercase', color: '#878e99', letterSpacing: '2px', fontSize: '12px', marginBottom: '15px', fontWeight: 'bold' }}>Email</p>
+          <a href="mailto:nilimeshbasu000@gmail.com" style={{ fontSize: '1.2rem', color: '#1e2125', fontWeight: 'bold', textDecoration: 'none' }}>nilimeshbasu000@gmail.com</a>
         </div>
-        <div className="contact-box">
-          <span className="contact-label">PHONE</span>
-          <p>+91 98765 43210</p>
+
+        {/* Phone Card */}
+        <div style={{ backgroundColor: 'white', padding: '50px 30px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textAlign: 'center', flex: '1', minWidth: '280px' }}>
+          <p style={{ textTransform: 'uppercase', color: '#878e99', letterSpacing: '2px', fontSize: '12px', marginBottom: '15px', fontWeight: 'bold' }}>Phone</p>
+          <a href="tel:+919732948058" style={{ fontSize: '1.2rem', color: '#1e2125', fontWeight: 'bold', textDecoration: 'none' }}>+91 9732948058</a>
         </div>
-        <div className="contact-box">
-          <span className="contact-label">LOCATION</span>
-          <p>India</p>
+
+        {/* Location Card */}
+        <div style={{ backgroundColor: 'white', padding: '50px 30px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', textAlign: 'center', flex: '1', minWidth: '280px' }}>
+          <p style={{ textTransform: 'uppercase', color: '#878e99', letterSpacing: '2px', fontSize: '12px', marginBottom: '15px', fontWeight: 'bold' }}>Location</p>
+          <p style={{ fontSize: '1.2rem', color: '#1e2125', fontWeight: 'bold', margin: '0' }}>North 24 Parganas, India</p>
         </div>
+
       </div>
     </section>
   );
-}
+};
+
+export default Contact;
