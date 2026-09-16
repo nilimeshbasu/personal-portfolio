@@ -1,16 +1,25 @@
-# React + Vite
+# 👨‍💻 Nilimesh Basu | Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio website! I am a Full Stack Developer and a BCA student at Techno India University, passionate about building responsive and efficient web applications.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+*(Add your live hosting link here once deployed, e.g., Vercel, Netlify, or GitHub Pages)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+This portfolio is built with modern web technologies:
+- **Frontend:** React.js, HTML5, CSS3, JavaScript
+- **Build Tool:** Vite
+- **Design:** Custom CSS with a minimalist, modern UI
 
-## React Compiler
+## 🌟 Features
+- **Hero Section:** Introduction with quick links to my GitHub and LinkedIn profiles.
+- **Skills Overview:** Highlighting my expertise in Frontend, Backend, and Database management.
+- **Contact Section:** Clean and modern contact cards for easy communication.
+- **Fully Responsive:** Designed to look great on desktop and mobile devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Run Locally
+Want to run this project on your local machine? Follow these steps:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/nilimeshbasu/personal-portfolio.git](https://github.com/nilimeshbasu/personal-portfolio.git)
