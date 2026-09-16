@@ -1,7 +1,21 @@
-import React from 'react';
+﻿import React from 'react';
 import profileImg from '../assets/profile.jpeg';
 
 const Header = () => {
+  const iconStyle = {
+    display: 'flex', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    width: '60px', 
+    height: '60px', 
+    backgroundColor: 'white', 
+    borderRadius: '5px', 
+    boxShadow: '0 4px 6px rgba(0,0,0,0.05)', 
+    color: '#1e2125', 
+    textDecoration: 'none', 
+    transition: 'transform 0.2s'
+  };
+
   return (
     <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '80px 10%', fontFamily: 'sans-serif', backgroundColor: '#f4f5f6', minHeight: '80vh', flexWrap: 'wrap' }}>
       <div style={{ flex: '1', paddingRight: '50px', minWidth: '300px' }}>
@@ -20,12 +34,36 @@ const Header = () => {
         <div style={{ display: 'flex', gap: '50px', marginTop: '40px', flexWrap: 'wrap' }}>
           <div>
             <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '2px', marginBottom: '15px' }}>Find With Me</p>
-            <div style={{ display: 'flex', gap: '15px' }}>
-              <a href="https://github.com/nilimeshbasu" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '60px', height: '60px', backgroundColor: 'white', borderRadius: '5px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', color: '#1e2125', textDecoration: 'none', transition: 'transform 0.2s' }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+            <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
+              
+              {/* GitHub */}
+              <a href="https://github.com/nilimeshbasu" target="_blank" rel="noopener noreferrer" style={iconStyle} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
                  <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor">
                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                  </svg>
               </a>
+
+              {/* LinkedIn */}
+              <a href="https://www.linkedin.com/in/n%C3%AFl%C3%AFm%C3%AAsh-b%C3%A3s%C3%BC-6b6594375" target="_blank" rel="noopener noreferrer" style={iconStyle} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                 <svg height="24" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+                 </svg>
+              </a>
+
+              {/* Email */}
+              <a href="mailto:nilimeshbasu000@gmail.com" style={iconStyle} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                 <svg height="24" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+                 </svg>
+              </a>
+
+              {/* Phone */}
+              <a href="tel:+919732948058" style={iconStyle} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-3px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                 <svg height="24" width="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                 </svg>
+              </a>
+
             </div>
           </div>
 
